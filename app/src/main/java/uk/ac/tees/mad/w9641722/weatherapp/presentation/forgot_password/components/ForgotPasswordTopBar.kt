@@ -1,10 +1,10 @@
-package uk.ac.tees.w9633914.weatherman.presentation.forgot_password.components
+package uk.ac.tees.mad.w9641722.weatherapp.presentation.forgot_password.components
 
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
-import uk.ac.tees.w9633914.weatherman.components.BackIcon
-import uk.ac.tees.w9633914.weatherman.core.Constants.FORGOT_PASSWORD_SCREEN
+import uk.ac.tees.mad.w9641722.weatherapp.components.BackIcon
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.FORGOT_PASSWORD_SCREEN
 
 @Composable
 fun ForgotPasswordTopBar(

@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.navigation
+package uk.ac.tees.mad.w9641722.weatherapp.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -14,7 +14,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import com.google.firebase.auth.FirebaseAuth
-import uk.ac.tees.w9633914.weatherman.presentation.sign_in.SignInScreen
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_in.SignInScreen
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable

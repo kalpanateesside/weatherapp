@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.components
+package uk.ac.tees.mad.w9641722.weatherapp.components
 
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.OutlinedTextField
@@ -11,7 +11,7 @@ import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import kotlinx.coroutines.job
-import uk.ac.tees.w9633914.weatherman.core.Constants.EMAIL_LABEL
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.EMAIL_LABEL
 
 @Composable
 fun EmailField(

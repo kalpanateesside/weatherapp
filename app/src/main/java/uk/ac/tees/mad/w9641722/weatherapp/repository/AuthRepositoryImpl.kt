@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.repository
+package uk.ac.tees.mad.w9641722.weatherapp.repository
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuth.AuthStateListener
@@ -8,9 +8,9 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.tasks.await
-import uk.ac.tees.w9633914.weatherman.domain.model.Response.Failure
-import uk.ac.tees.w9633914.weatherman.domain.model.Response.Success
-import uk.ac.tees.w9633914.weatherman.domain.repository.AuthRepository
+import uk.ac.tees.mad.w9641722.weatherapp.domain.model.Response.Failure
+import uk.ac.tees.mad.w9641722.weatherapp.domain.model.Response.Success
+import uk.ac.tees.mad.w9641722.weatherapp.domain.repository.AuthRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 

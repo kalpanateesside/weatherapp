@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.presentation.sign_in.components
+package uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_in.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -19,16 +19,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import uk.ac.tees.w9633914.weatherman.components.EmailField
-import uk.ac.tees.w9633914.weatherman.components.PasswordField
-import uk.ac.tees.w9633914.weatherman.components.SmallSpacer
-import uk.ac.tees.w9633914.weatherman.core.Constants.EMPTY_STRING
-import uk.ac.tees.w9633914.weatherman.core.Constants.FORGOT_PASSWORD
-import uk.ac.tees.w9633914.weatherman.core.Constants.NO_ACCOUNT
-import uk.ac.tees.w9633914.weatherman.core.Constants.SIGN_IN_BUTTON
-import uk.ac.tees.w9633914.weatherman.core.Constants.VERTICAL_DIVIDER
+import uk.ac.tees.mad.w9641722.weatherapp.components.EmailField
+import uk.ac.tees.mad.w9641722.weatherapp.components.PasswordField
+import uk.ac.tees.mad.w9641722.weatherapp.components.SmallSpacer
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.EMPTY_STRING
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.FORGOT_PASSWORD
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.NO_ACCOUNT
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.SIGN_IN_BUTTON
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.VERTICAL_DIVIDER
 
-import uk.ac.tees.w9633914.weatherman.R;
+import uk.ac.tees.mad.w9641722.weatherapp.R;
 @Composable
 @ExperimentalComposeUiApi
 fun SignInContent(
@@ -68,7 +68,7 @@ fun SignInContent(
     ) {
         SmallSpacer()
         Image(
-            painter = painterResource(id = R.drawable.weatherman),
+            painter = painterResource(id = R.drawable.weathernbg),
             contentDescription = "Logo")
         SmallSpacer()
         EmailField(

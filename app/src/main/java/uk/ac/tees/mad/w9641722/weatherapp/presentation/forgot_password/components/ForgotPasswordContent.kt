@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.presentation.forgot_password.components
+package uk.ac.tees.mad.w9641722.weatherapp.presentation.forgot_password.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -14,11 +14,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.sp
-import uk.ac.tees.w9633914.weatherman.R
-import uk.ac.tees.w9633914.weatherman.components.EmailField
-import uk.ac.tees.w9633914.weatherman.components.SmallSpacer
-import uk.ac.tees.w9633914.weatherman.core.Constants.EMPTY_STRING
-import uk.ac.tees.w9633914.weatherman.core.Constants.RESET_PASSWORD_BUTTON
+import uk.ac.tees.mad.w9641722.weatherapp.R
+import uk.ac.tees.mad.w9641722.weatherapp.components.EmailField
+import uk.ac.tees.mad.w9641722.weatherapp.components.SmallSpacer
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.EMPTY_STRING
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.RESET_PASSWORD_BUTTON
 
 @Composable
 fun ForgotPasswordContent(
@@ -45,7 +45,7 @@ fun ForgotPasswordContent(
     ) {
         SmallSpacer()
         Image(
-            painter = painterResource(id = R.drawable.weatherman),
+            painter = painterResource(id = R.drawable.weathernbg),
             contentDescription = "Logo")
         EmailField(
             email = email,

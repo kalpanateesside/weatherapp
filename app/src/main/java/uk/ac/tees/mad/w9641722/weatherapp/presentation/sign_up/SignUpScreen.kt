@@ -1,16 +1,16 @@
-package uk.ac.tees.w9633914.weatherman.presentation.sign_up
+package uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_up
 
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.platform.LocalContext
 import androidx.hilt.navigation.compose.hiltViewModel
-import uk.ac.tees.w9633914.weatherman.core.Constants.VERIFY_EMAIL_MESSAGE
-import uk.ac.tees.w9633914.weatherman.core.Utils.Companion.showMessage
-import uk.ac.tees.w9633914.weatherman.presentation.sign_up.components.SendEmailVerification
-import uk.ac.tees.w9633914.weatherman.presentation.sign_up.components.SignUp
-import uk.ac.tees.w9633914.weatherman.presentation.sign_up.components.SignUpContent
-import uk.ac.tees.w9633914.weatherman.presentation.sign_up.components.SignUpTopBar
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.VERIFY_EMAIL_MESSAGE
+import uk.ac.tees.mad.w9641722.weatherapp.core.Utils.Companion.showMessage
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_up.components.SendEmailVerification
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_up.components.SignUp
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_up.components.SignUpContent
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_up.components.SignUpTopBar
 
 @Composable
 @ExperimentalComposeUiApi

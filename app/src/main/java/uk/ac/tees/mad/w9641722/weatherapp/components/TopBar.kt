@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.components
+package uk.ac.tees.mad.w9641722.weatherapp.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -9,8 +9,8 @@ import androidx.compose.material.icons.outlined.MoreVert
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import uk.ac.tees.w9633914.weatherman.core.Constants.REVOKE_ACCESS_ITEM
-import uk.ac.tees.w9633914.weatherman.core.Constants.SIGN_OUT_ITEM
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.REVOKE_ACCESS_ITEM
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.SIGN_OUT_ITEM
 
 @Composable
 fun TopBar(

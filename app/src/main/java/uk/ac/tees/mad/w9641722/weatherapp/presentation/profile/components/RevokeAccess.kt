@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.presentation.profile.components
+package uk.ac.tees.mad.w9641722.weatherapp.presentation.profile.components
 
 import androidx.compose.material.ScaffoldState
 import androidx.compose.material.SnackbarResult
@@ -8,15 +8,15 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.hilt.navigation.compose.hiltViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
-import uk.ac.tees.w9633914.weatherman.components.ProgressBar
-import uk.ac.tees.w9633914.weatherman.core.Constants.ACCESS_REVOKED_MESSAGE
-import uk.ac.tees.w9633914.weatherman.core.Constants.REVOKE_ACCESS_MESSAGE
-import uk.ac.tees.w9633914.weatherman.core.Constants.SENSITIVE_OPERATION_MESSAGE
-import uk.ac.tees.w9633914.weatherman.core.Constants.SIGN_OUT_ITEM
-import uk.ac.tees.w9633914.weatherman.core.Utils.Companion.print
-import uk.ac.tees.w9633914.weatherman.core.Utils.Companion.showMessage
-import uk.ac.tees.w9633914.weatherman.domain.model.Response.*
-import uk.ac.tees.w9633914.weatherman.presentation.profile.ProfileViewModel
+import uk.ac.tees.mad.w9641722.weatherapp.components.ProgressBar
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.ACCESS_REVOKED_MESSAGE
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.REVOKE_ACCESS_MESSAGE
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.SENSITIVE_OPERATION_MESSAGE
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.SIGN_OUT_ITEM
+import uk.ac.tees.mad.w9641722.weatherapp.core.Utils.Companion.print
+import uk.ac.tees.mad.w9641722.weatherapp.core.Utils.Companion.showMessage
+import uk.ac.tees.mad.w9641722.weatherapp.domain.model.Response.*
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.profile.ProfileViewModel
 
 @Composable
 fun RevokeAccess(

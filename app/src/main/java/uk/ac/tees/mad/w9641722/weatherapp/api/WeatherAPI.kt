@@ -1,9 +1,9 @@
-package uk.ac.tees.w9633914.weatherman.api
+package uk.ac.tees.mad.w9641722.weatherapp.api
 
-import uk.ac.tees.w9633914.weatherman.model.WeatherResponse
-import uk.ac.tees.w9633914.weatherman.model.forecast_model.ForecastResponse
-import uk.ac.tees.w9633914.weatherman.model.search_model.ResponseSearch
-import uk.ac.tees.w9633914.weatherman.utils.Constants.Companion.API_KEY
+import uk.ac.tees.mad.w9641722.weatherapp.model.WeatherResponse
+import uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model.ForecastResponse
+import uk.ac.tees.mad.w9641722.weatherapp.model.search_model.ResponseSearch
+import uk.ac.tees.mad.w9641722.weatherapp.utils.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

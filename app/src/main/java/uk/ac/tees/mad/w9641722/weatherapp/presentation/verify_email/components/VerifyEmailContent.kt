@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.presentation.verify_email.components
+package uk.ac.tees.mad.w9641722.weatherapp.presentation.verify_email.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -9,9 +9,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import uk.ac.tees.w9633914.weatherman.components.SmallSpacer
-import uk.ac.tees.w9633914.weatherman.core.Constants.ALREADY_VERIFIED
-import uk.ac.tees.w9633914.weatherman.core.Constants.SPAM_EMAIL
+import uk.ac.tees.mad.w9641722.weatherapp.components.SmallSpacer
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.ALREADY_VERIFIED
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.SPAM_EMAIL
 
 @Composable
 fun VerifyEmailContent(

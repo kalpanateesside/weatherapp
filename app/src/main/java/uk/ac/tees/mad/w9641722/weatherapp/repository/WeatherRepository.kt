@@ -1,6 +1,6 @@
-package uk.ac.tees.w9633914.weatherman.repository
+package uk.ac.tees.mad.w9641722.weatherapp.repository
 
-import uk.ac.tees.w9633914.weatherman.api.RetrofitInstance
+import uk.ac.tees.mad.w9641722.weatherapp.api.RetrofitInstance
 
 class WeatherRepository{
     suspend fun getCurrentWeather(location: String) =

@@ -1,3 +1,3 @@
-package uk.ac.tees.w9633914.weatherman.model.search_model
+package uk.ac.tees.mad.w9641722.weatherapp.model.search_model
 
 class ResponseSearch : ArrayList<ResponseSearchItem>()

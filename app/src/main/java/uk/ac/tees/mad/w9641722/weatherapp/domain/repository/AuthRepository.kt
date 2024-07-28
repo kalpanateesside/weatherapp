@@ -1,9 +1,9 @@
-package uk.ac.tees.w9633914.weatherman.domain.repository
+package uk.ac.tees.mad.w9641722.weatherapp.domain.repository
 
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.StateFlow
-import uk.ac.tees.w9633914.weatherman.domain.model.Response
+import uk.ac.tees.mad.w9641722.weatherapp.domain.model.Response
 
 typealias SignUpResponse = Response<Boolean>
 typealias SendEmailVerificationResponse = Response<Boolean>

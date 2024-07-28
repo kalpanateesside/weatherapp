@@ -1,17 +1,16 @@
-package uk.ac.tees.w9633914.weatherman.di
+package uk.ac.tees.mad.w9641722.weatherapp.di
 
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import uk.ac.tees.w9633914.weatherman.api.RetrofitInstance
-import uk.ac.tees.w9633914.weatherman.api.WeatherAPI
+import uk.ac.tees.mad.w9641722.weatherapp.api.RetrofitInstance
+import uk.ac.tees.mad.w9641722.weatherapp.api.WeatherAPI
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
-import uk.ac.tees.w9633914.weatherman.repository.AuthRepositoryImpl
-import uk.ac.tees.w9633914.weatherman.domain.repository.AuthRepository
-import uk.ac.tees.w9633914.weatherman.repository.WeatherRepository
-import javax.inject.Singleton
+import uk.ac.tees.mad.w9641722.weatherapp.repository.AuthRepositoryImpl
+import uk.ac.tees.mad.w9641722.weatherapp.domain.repository.AuthRepository
+import uk.ac.tees.mad.w9641722.weatherapp.repository.WeatherRepository
 
 @Module
 @InstallIn(ViewModelComponent::class)

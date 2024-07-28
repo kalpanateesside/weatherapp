@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.components
+package uk.ac.tees.mad.w9641722.weatherapp.components
 
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton

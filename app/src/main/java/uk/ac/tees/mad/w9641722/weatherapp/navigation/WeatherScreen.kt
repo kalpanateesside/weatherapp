@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.navigation
+package uk.ac.tees.mad.w9641722.weatherapp.navigation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -27,9 +27,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import retrofit2.Response
-import uk.ac.tees.w9633914.weatherman.R
-import uk.ac.tees.w9633914.weatherman.model.WeatherResponse
-import uk.ac.tees.w9633914.weatherman.model.forecast_model.ForecastResponse
+import uk.ac.tees.mad.w9641722.weatherapp.R
+import uk.ac.tees.mad.w9641722.weatherapp.model.WeatherResponse
+import uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model.ForecastResponse
 
 @Composable
 fun WeatherScreen(

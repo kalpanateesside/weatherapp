@@ -1,9 +1,9 @@
-package uk.ac.tees.w9633914.weatherman.presentation.sign_in.components
+package uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_in.components
 
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
-import uk.ac.tees.w9633914.weatherman.core.Constants.SIGN_IN_SCREEN
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.SIGN_IN_SCREEN
 
 @Composable
 fun SignInTopBar() {

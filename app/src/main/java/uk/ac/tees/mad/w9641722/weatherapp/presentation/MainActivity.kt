@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.presentation
+package uk.ac.tees.mad.w9641722.weatherapp.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,11 +11,11 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
-import uk.ac.tees.w9633914.weatherman.navigation.NavGraph
-import uk.ac.tees.w9633914.weatherman.navigation.NavigationSystem
-import uk.ac.tees.w9633914.weatherman.navigation.Screen.ProfileScreen
-import uk.ac.tees.w9633914.weatherman.navigation.Screen.SignInScreen
-import uk.ac.tees.w9633914.weatherman.navigation.Screen.VerifyEmailScreen
+import uk.ac.tees.mad.w9641722.weatherapp.navigation.NavGraph
+import uk.ac.tees.mad.w9641722.weatherapp.navigation.NavigationSystem
+import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.ProfileScreen
+import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.SignInScreen
+import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.VerifyEmailScreen
 
 @AndroidEntryPoint
 @ExperimentalComposeUiApi

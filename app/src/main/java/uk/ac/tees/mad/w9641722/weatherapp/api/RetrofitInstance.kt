@@ -1,10 +1,11 @@
-package uk.ac.tees.w9633914.weatherman.api
+package uk.ac.tees.mad.w9641722.weatherapp.api
 
-import uk.ac.tees.w9633914.weatherman.utils.Constants.Companion.BASE_URL
+import uk.ac.tees.mad.w9641722.weatherapp.utils.Constants.Companion.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import uk.ac.tees.mad.w9641722.weatherapp.api.WeatherAPI
 
 class RetrofitInstance {
     companion object{

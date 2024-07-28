@@ -1,7 +1,7 @@
-package uk.ac.tees.w9633914.weatherman
+package uk.ac.tees.mad.w9641722.weatherapp
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class WeatherManApp : Application()
+class WeatherApp : Application()

@@ -1,14 +1,14 @@
-package uk.ac.tees.w9633914.weatherman.presentation.forgot_password
+package uk.ac.tees.mad.w9641722.weatherapp.presentation.forgot_password
 
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.hilt.navigation.compose.hiltViewModel
-import uk.ac.tees.w9633914.weatherman.core.Constants.RESET_PASSWORD_MESSAGE
-import uk.ac.tees.w9633914.weatherman.core.Utils.Companion.showMessage
-import uk.ac.tees.w9633914.weatherman.presentation.forgot_password.components.ForgotPassword
-import uk.ac.tees.w9633914.weatherman.presentation.forgot_password.components.ForgotPasswordContent
-import uk.ac.tees.w9633914.weatherman.presentation.forgot_password.components.ForgotPasswordTopBar
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.RESET_PASSWORD_MESSAGE
+import uk.ac.tees.mad.w9641722.weatherapp.core.Utils.Companion.showMessage
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.forgot_password.components.ForgotPassword
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.forgot_password.components.ForgotPasswordContent
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.forgot_password.components.ForgotPasswordTopBar
 
 @Composable
 fun ForgotPasswordScreen(

@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.model.forecast_model
+package uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model
 
 data class Location(
     val country: String,

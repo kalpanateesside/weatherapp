@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.core
+package uk.ac.tees.mad.w9641722.weatherapp.core
 
 object Constants {
     //App

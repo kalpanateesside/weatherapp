@@ -1,6 +1,6 @@
-package uk.ac.tees.w9633914.weatherman.model.forecast_model
+package uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model
 
-import uk.ac.tees.w9633914.weatherman.model.forecast_model.Condition
+import uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model.Condition
 
 data class Hour(
     val chance_of_rain: Double,

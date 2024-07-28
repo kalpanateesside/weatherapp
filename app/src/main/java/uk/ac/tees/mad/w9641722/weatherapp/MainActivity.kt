@@ -9,8 +9,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import uk.ac.tees.mad.w9641722.weatherapp.ui.theme.WeatherappTheme
+import uk.ac.tees.mad.w9641722.weatherapp.theme.WeatherappTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,10 +36,3 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    WeatherappTheme {
-        Greeting("Android")
-    }
-}

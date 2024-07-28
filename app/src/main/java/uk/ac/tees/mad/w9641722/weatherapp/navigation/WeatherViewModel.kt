@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.navigation
+package uk.ac.tees.mad.w9641722.weatherapp.navigation
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
@@ -13,10 +13,10 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import retrofit2.Response
-import uk.ac.tees.w9633914.weatherman.model.WeatherResponse
-import uk.ac.tees.w9633914.weatherman.model.forecast_model.ForecastResponse
-import uk.ac.tees.w9633914.weatherman.model.search_model.ResponseSearchItem
-import uk.ac.tees.w9633914.weatherman.repository.WeatherRepository
+import uk.ac.tees.mad.w9641722.weatherapp.model.WeatherResponse
+import uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model.ForecastResponse
+import uk.ac.tees.mad.w9641722.weatherapp.model.search_model.ResponseSearchItem
+import uk.ac.tees.mad.w9641722.weatherapp.repository.WeatherRepository
 import javax.inject.Inject
 
 @HiltViewModel

@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.presentation.sign_in
+package uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_in
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -7,10 +7,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
-import uk.ac.tees.w9633914.weatherman.domain.model.Response.Loading
-import uk.ac.tees.w9633914.weatherman.domain.model.Response.Success
-import uk.ac.tees.w9633914.weatherman.domain.repository.AuthRepository
-import uk.ac.tees.w9633914.weatherman.domain.repository.SignInResponse
+import uk.ac.tees.mad.w9641722.weatherapp.domain.model.Response.Loading
+import uk.ac.tees.mad.w9641722.weatherapp.domain.model.Response.Success
+import uk.ac.tees.mad.w9641722.weatherapp.domain.repository.AuthRepository
+import uk.ac.tees.mad.w9641722.weatherapp.domain.repository.SignInResponse
 import javax.inject.Inject
 
 @HiltViewModel

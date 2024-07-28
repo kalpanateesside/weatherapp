@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.presentation.profile.components
+package uk.ac.tees.mad.w9641722.weatherapp.presentation.profile.components
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
@@ -10,7 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import uk.ac.tees.w9633914.weatherman.core.Constants.WELCOME_MESSAGE
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.WELCOME_MESSAGE
 
 @Composable
 fun ProfileContent(

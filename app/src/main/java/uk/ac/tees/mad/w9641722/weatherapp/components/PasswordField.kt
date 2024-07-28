@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.components
+package uk.ac.tees.mad.w9641722.weatherapp.components
 
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.Icon
@@ -13,7 +13,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.input.VisualTransformation
-import uk.ac.tees.w9633914.weatherman.core.Constants.PASSWORD_LABEL
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.PASSWORD_LABEL
 
 @Composable
 fun PasswordField(

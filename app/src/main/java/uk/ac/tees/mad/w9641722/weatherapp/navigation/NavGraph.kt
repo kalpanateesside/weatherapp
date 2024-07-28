@@ -1,20 +1,20 @@
-package uk.ac.tees.w9633914.weatherman.navigation
+package uk.ac.tees.mad.w9641722.weatherapp.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import uk.ac.tees.w9633914.weatherman.navigation.Screen.ForgotPasswordScreen
-import uk.ac.tees.w9633914.weatherman.navigation.Screen.ProfileScreen
-import uk.ac.tees.w9633914.weatherman.navigation.Screen.SignInScreen
-import uk.ac.tees.w9633914.weatherman.navigation.Screen.SignUpScreen
-import uk.ac.tees.w9633914.weatherman.navigation.Screen.VerifyEmailScreen
-import uk.ac.tees.w9633914.weatherman.presentation.forgot_password.ForgotPasswordScreen
-import uk.ac.tees.w9633914.weatherman.presentation.profile.ProfileScreen
-import uk.ac.tees.w9633914.weatherman.presentation.sign_in.SignInScreen
-import uk.ac.tees.w9633914.weatherman.presentation.sign_up.SignUpScreen
-import uk.ac.tees.w9633914.weatherman.presentation.verify_email.VerifyEmailScreen
+import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.ForgotPasswordScreen
+import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.ProfileScreen
+import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.SignInScreen
+import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.SignUpScreen
+import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.VerifyEmailScreen
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.forgot_password.ForgotPasswordScreen
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.profile.ProfileScreen
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_in.SignInScreen
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_up.SignUpScreen
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.verify_email.VerifyEmailScreen
 
 @Composable
 @ExperimentalComposeUiApi

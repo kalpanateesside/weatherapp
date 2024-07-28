@@ -1,10 +1,10 @@
-package uk.ac.tees.w9633914.weatherman.core
+package uk.ac.tees.mad.w9641722.weatherapp.core
 
 import android.content.Context
 import android.util.Log
 import android.widget.Toast.LENGTH_LONG
 import android.widget.Toast.makeText
-import uk.ac.tees.w9633914.weatherman.core.Constants.TAG
+import uk.ac.tees.mad.w9641722.weatherapp.core.Constants.TAG
 
 class Utils {
     companion object {

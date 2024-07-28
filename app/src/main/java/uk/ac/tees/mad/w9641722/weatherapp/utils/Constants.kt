@@ -1,4 +1,4 @@
-package uk.ac.tees.w9633914.weatherman.utils
+package uk.ac.tees.mad.w9641722.weatherapp.utils
 
 class Constants {
     companion object{
