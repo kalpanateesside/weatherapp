@@ -5,9 +5,8 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import uk.ac.tees.mad.w9641722.weatherapp.api.WeatherAPI
 
-class RetrofitInstance {
+class RetrofitImpl {
     companion object{
         private val retrofit by lazy{
             val logging = HttpLoggingInterceptor()

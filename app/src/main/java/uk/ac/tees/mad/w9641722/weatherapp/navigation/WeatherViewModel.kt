@@ -13,10 +13,10 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import retrofit2.Response
-import uk.ac.tees.mad.w9641722.weatherapp.model.WeatherResponse
-import uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model.ForecastResponse
-import uk.ac.tees.mad.w9641722.weatherapp.model.search_model.ResponseSearchItem
-import uk.ac.tees.mad.w9641722.weatherapp.repository.WeatherRepository
+import uk.ac.tees.mad.w9641722.weatherapp.domain.model.WeatherResponse
+import uk.ac.tees.mad.w9641722.weatherapp.domain.model.forecast_model.ForecastResponse
+import uk.ac.tees.mad.w9641722.weatherapp.domain.model.search_model.ResponseSearchItem
+import uk.ac.tees.mad.w9641722.weatherapp.domain.repository.WeatherRepository
 import javax.inject.Inject
 
 @HiltViewModel

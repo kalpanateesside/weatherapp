@@ -1,6 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model
-
-import uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model.Astro
+package uk.ac.tees.mad.w9641722.weatherapp.domain.model.forecast_model
 
 data class Forecastday(
     val astro: Astro,

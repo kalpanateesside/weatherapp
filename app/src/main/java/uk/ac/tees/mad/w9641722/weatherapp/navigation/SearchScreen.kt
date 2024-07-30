@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import uk.ac.tees.mad.w9641722.weatherapp.R
-import uk.ac.tees.mad.w9641722.weatherapp.model.search_model.ResponseSearchItem
+import uk.ac.tees.mad.w9641722.weatherapp.domain.model.search_model.ResponseSearchItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -1,6 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model
-
-import uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model.Condition
+package uk.ac.tees.mad.w9641722.weatherapp.domain.model.forecast_model
 
 data class Day(
     val avghumidity: Double,

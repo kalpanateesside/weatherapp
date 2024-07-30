@@ -1,5 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.model.forecast_model
-
+package uk.ac.tees.mad.w9641722.weatherapp.domain.model
 
 data class Current(
     val cloud: Double,
