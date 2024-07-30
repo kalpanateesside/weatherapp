@@ -14,7 +14,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import com.google.firebase.auth.FirebaseAuth
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_in.SignInScreen
+import uk.ac.tees.mad.w9641722.weatherapp.presentation.signin.SignInScreen
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable
