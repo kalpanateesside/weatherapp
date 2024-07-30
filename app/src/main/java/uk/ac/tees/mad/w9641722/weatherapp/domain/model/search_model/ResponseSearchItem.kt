@@ -1,4 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.model.search_model
+package uk.ac.tees.mad.w9641722.weatherapp.domain.model.search_model
 
 data class ResponseSearchItem(
     val country: String,

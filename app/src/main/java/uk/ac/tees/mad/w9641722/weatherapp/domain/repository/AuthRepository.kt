@@ -10,7 +10,6 @@ typealias SendEmailVerificationResponse = Response<Boolean>
 typealias SignInResponse = Response<Boolean>
 typealias ReloadUserResponse = Response<Boolean>
 typealias SendPasswordResetEmailResponse = Response<Boolean>
-typealias RevokeAccessResponse = Response<Boolean>
 typealias AuthStateResponse = StateFlow<Boolean>
 
 interface AuthRepository {
@@ -27,8 +26,6 @@ interface AuthRepository {
     suspend fun sendPasswordResetEmail(email: String): SendPasswordResetEmailResponse
 
     fun signOut()
-
-    suspend fun revokeAccess(): RevokeAccessResponse
 
     fun getAuthState(viewModelScope: CoroutineScope): AuthStateResponse
 }

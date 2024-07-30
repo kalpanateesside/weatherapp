@@ -1,4 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.repository
+package uk.ac.tees.mad.w9641722.weatherapp.domain.repository
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuth.AuthStateListener
@@ -60,13 +60,6 @@ class AuthRepositoryImpl @Inject constructor(
     }
 
     override fun signOut() = auth.signOut()
-
-    override suspend fun revokeAccess() = try {
-        auth.currentUser?.delete()?.await()
-        Success(true)
-    } catch (e: Exception) {
-        Failure(e)
-    }
 
     override fun getAuthState(viewModelScope: CoroutineScope) = callbackFlow {
         val authStateListener = AuthStateListener { auth ->

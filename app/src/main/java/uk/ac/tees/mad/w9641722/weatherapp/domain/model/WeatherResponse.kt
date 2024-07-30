@@ -1,4 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.model
+package uk.ac.tees.mad.w9641722.weatherapp.domain.model
 
 data class WeatherResponse(
     val current: Current,

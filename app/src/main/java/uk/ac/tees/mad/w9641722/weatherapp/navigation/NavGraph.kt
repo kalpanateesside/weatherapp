@@ -6,15 +6,11 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.ForgotPasswordScreen
-import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.ProfileScreen
 import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.SignInScreen
 import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.SignUpScreen
-import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.VerifyEmailScreen
 import uk.ac.tees.mad.w9641722.weatherapp.presentation.forgot_password.ForgotPasswordScreen
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.profile.ProfileScreen
 import uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_in.SignInScreen
 import uk.ac.tees.mad.w9641722.weatherapp.presentation.sign_up.SignUpScreen
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.verify_email.VerifyEmailScreen
 
 @Composable
 @ExperimentalComposeUiApi
@@ -54,25 +50,6 @@ fun NavGraph(
                     navController.popBackStack()
                 }
             )
-        }
-        composable(
-            route = VerifyEmailScreen.route
-        ) {
-            VerifyEmailScreen(
-                navigateToProfileScreen = {
-                    navController.navigate(ProfileScreen.route) {
-                        popUpTo(navController.graph.id) {
-                            inclusive = true
-                        }
-                    }
-                }
-            )
-        }
-        composable(
-            route = ProfileScreen.route
-        ) {
-            //ProfileScreen()
-            NavigationSystem()
         }
     }
 }

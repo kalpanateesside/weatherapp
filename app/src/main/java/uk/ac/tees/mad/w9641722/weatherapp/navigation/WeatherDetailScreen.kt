@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import retrofit2.Response
 import uk.ac.tees.mad.w9641722.weatherapp.R
-import uk.ac.tees.mad.w9641722.weatherapp.model.WeatherResponse
+import uk.ac.tees.mad.w9641722.weatherapp.domain.model.WeatherResponse
 
 @Composable
 fun WeatherDetailScreen(
