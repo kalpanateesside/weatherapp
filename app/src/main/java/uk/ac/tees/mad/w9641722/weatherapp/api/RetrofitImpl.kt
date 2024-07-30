@@ -1,12 +1,13 @@
 package uk.ac.tees.mad.w9641722.weatherapp.api
 
-import uk.ac.tees.mad.w9641722.weatherapp.utils.Constants.Companion.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitImpl {
+
+
     companion object{
         private val retrofit by lazy{
             val logging = HttpLoggingInterceptor()
@@ -15,7 +16,7 @@ class RetrofitImpl {
                 .addInterceptor(logging)
                 .build()
             Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl("https://api.weatherapi.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()

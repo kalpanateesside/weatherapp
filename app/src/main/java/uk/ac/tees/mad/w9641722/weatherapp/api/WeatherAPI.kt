@@ -3,7 +3,6 @@ package uk.ac.tees.mad.w9641722.weatherapp.api
 import uk.ac.tees.mad.w9641722.weatherapp.domain.model.WeatherResponse
 import uk.ac.tees.mad.w9641722.weatherapp.domain.model.forecast_model.ForecastResponse
 import uk.ac.tees.mad.w9641722.weatherapp.domain.model.search_model.ResponseSearch
-import uk.ac.tees.mad.w9641722.weatherapp.utils.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -15,7 +14,7 @@ interface WeatherAPI {
         @Query("q")
         location: String,
         @Query("key")
-        key: String = API_KEY
+        key: String = "e666878d058642c2bd153213243007"
     ): Response<WeatherResponse>
 
 
@@ -24,7 +23,7 @@ interface WeatherAPI {
         @Query("q")
         searchQuery: String,
         @Query("key")
-        key: String = API_KEY
+        key: String = "e666878d058642c2bd153213243007"
     ): Response<ResponseSearch>
 
     @GET("v1/forecast.json")
@@ -34,6 +33,6 @@ interface WeatherAPI {
         @Query("days")
         days: Int = 5,
         @Query("key")
-        key: String = API_KEY
+        key: String = "e666878d058642c2bd153213243007"
     ): Response<ForecastResponse>
 }
