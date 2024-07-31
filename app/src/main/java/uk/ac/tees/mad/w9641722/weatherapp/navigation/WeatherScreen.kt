@@ -164,25 +164,5 @@ fun WeatherScreen(
                 }
             }
         }
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(10.dp)
-        ) {
-            LazyRow{
-                val forecast = forecastState.value?.body()?.forecast?.forecastday
-                forecast?.size?.let {
-                    items(it){ index ->
-                        val item = forecast[index].hour[index]
-                        ForecastItem(
-                            icon = "https:${item.condition.icon}",
-                            temp = item.temp_c.toString()+"°C",
-                            hour = item.time.substring(12, 16)
-                        )
-                        Spacer(modifier = Modifier.width(35.dp))
-                    }
-                }
-            }
-        }
     }
 }
