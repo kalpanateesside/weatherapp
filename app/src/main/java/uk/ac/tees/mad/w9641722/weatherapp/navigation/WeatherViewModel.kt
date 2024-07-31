@@ -24,7 +24,7 @@ class WeatherViewModel @Inject constructor(
     private val repository: WeatherRepository
 ): ViewModel(){
 
-    private val _searchText = MutableStateFlow("Middlesbrough")
+    private val _searchText = MutableStateFlow("New castle")
     val searchText = _searchText.asStateFlow()
 
     private val _isSearching = MutableStateFlow(false)
