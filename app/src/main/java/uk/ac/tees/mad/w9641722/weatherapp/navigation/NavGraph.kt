@@ -8,9 +8,9 @@ import androidx.navigation.compose.composable
 import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.ForgotPasswordScreen
 import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.SignInScreen
 import uk.ac.tees.mad.w9641722.weatherapp.navigation.Screen.SignUpScreen
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.ForgotPasswordScreen
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.SignInScreen
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.SignUpScreen
+import uk.ac.tees.mad.w9641722.weatherapp.ui.ForgotPasswordScreen
+import uk.ac.tees.mad.w9641722.weatherapp.ui.SignInScreen
+import uk.ac.tees.mad.w9641722.weatherapp.ui.SignUpScreen
 
 @Composable
 @ExperimentalComposeUiApi

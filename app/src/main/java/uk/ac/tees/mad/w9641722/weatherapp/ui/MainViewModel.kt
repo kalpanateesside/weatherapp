@@ -1,4 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.presentation
+package uk.ac.tees.mad.w9641722.weatherapp.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

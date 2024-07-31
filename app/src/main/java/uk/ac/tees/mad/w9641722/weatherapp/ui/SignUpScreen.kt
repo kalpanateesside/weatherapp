@@ -1,11 +1,10 @@
-package uk.ac.tees.mad.w9641722.weatherapp.presentation
+package uk.ac.tees.mad.w9641722.weatherapp.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Button
@@ -24,65 +23,88 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import uk.ac.tees.mad.w9641722.weatherapp.R
 import uk.ac.tees.mad.w9641722.weatherapp.api.Constants
+import uk.ac.tees.mad.w9641722.weatherapp.api.Constants.VERIFY_EMAIL_MESSAGE
 import uk.ac.tees.mad.w9641722.weatherapp.api.Utils
 import uk.ac.tees.mad.w9641722.weatherapp.api.Utils.Companion.showMessage
 import uk.ac.tees.mad.w9641722.weatherapp.domain.model.Response
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.components.EmailField
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.components.PasswordField
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.components.ProgressBar
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.components.SmallSpacer
 
 @Composable
 @ExperimentalComposeUiApi
-fun SignInScreen(
-    viewModel: SignInViewModel = hiltViewModel(),
-    navigateToForgotPasswordScreen: () -> Unit,
-    navigateToSignUpScreen: () -> Unit,
+fun SignUpScreen(
+    viewModel: SignUpViewModel = hiltViewModel(),
+    navigateBack: () -> Unit
 ) {
     val context = LocalContext.current
 
     Scaffold(
         topBar = {
-            SignInTopBar()
+            SignUpTopBar(
+                navigateBack = navigateBack
+            )
         },
         content = { padding ->
-            SignInContent(
+            SignUpContent(
                 padding = padding,
-                signIn = { email, password ->
-                    viewModel.signInWithEmailAndPassword(email, password)
+                signUp = { email, password ->
+                    viewModel.signUpWithEmailAndPassword(email, password)
                 },
-                navigateToForgotPasswordScreen = navigateToForgotPasswordScreen,
-                navigateToSignUpScreen = navigateToSignUpScreen
+                navigateBack = navigateBack
             )
         }
     )
 
-    SignIn(
-        showErrorMessage = { errorMessage ->
-            showMessage(context, errorMessage)
+    SignUp(
+        sendEmailVerification = {
+            viewModel.sendEmailVerification()
+        },
+        showVerifyEmailMessage = {
+            showMessage(context, VERIFY_EMAIL_MESSAGE)
         }
     )
+
+    SendEmailVerification()
 }
 
 @Composable
-fun SignIn(
-    viewModel: SignInViewModel = hiltViewModel(),
-    showErrorMessage: (errorMessage: String?) -> Unit
+fun SendEmailVerification(
+    viewModel: SignUpViewModel = hiltViewModel()
 ) {
-    when(val signInResponse = viewModel.signInResponse) {
+    when(val sendEmailVerificationResponse = viewModel.sendEmailVerificationResponse) {
         is Response.Loading -> ProgressBar()
         is Response.Success -> Unit
-        is Response.Failure -> signInResponse.apply {
+        is Response.Failure -> sendEmailVerificationResponse.apply {
             LaunchedEffect(e) {
                 Utils.print(e)
-                showErrorMessage(e.message)
+            }
+        }
+    }
+}
+
+@Composable
+fun SignUp(
+    viewModel: SignUpViewModel = hiltViewModel(),
+    sendEmailVerification: () -> Unit,
+    showVerifyEmailMessage: () -> Unit
+) {
+    when(val signUpResponse = viewModel.signUpResponse) {
+        is Response.Loading -> ProgressBar()
+        is Response.Success -> {
+            val isUserSignedUp = signUpResponse.data
+            LaunchedEffect(isUserSignedUp) {
+                if (isUserSignedUp) {
+                    sendEmailVerification()
+                    showVerifyEmailMessage()
+                }
+            }
+        }
+        is Response.Failure -> signUpResponse.apply {
+            LaunchedEffect(e) {
+                Utils.print(e)
             }
         }
     }
@@ -90,11 +112,10 @@ fun SignIn(
 
 @Composable
 @ExperimentalComposeUiApi
-fun SignInContent(
+fun SignUpContent(
     padding: PaddingValues,
-    signIn: (email: String, password: String) -> Unit,
-    navigateToForgotPasswordScreen: () -> Unit,
-    navigateToSignUpScreen: () -> Unit
+    signUp: (email: String, password: String) -> Unit,
+    navigateBack: () -> Unit
 ) {
     var email by rememberSaveable(
         stateSaver = TextFieldValue.Saver,
@@ -143,50 +164,41 @@ fun SignInContent(
                 password = newValue
             }
         )
-
         SmallSpacer()
         Button(
             onClick = {
                 keyboard?.hide()
-                signIn(email.text, password.text)
+                signUp(email.text, password.text)
             }
         ) {
             Text(
-                text = Constants.SIGN_IN_BUTTON,
-                fontSize = 18.sp
+                text = Constants.SIGN_UP_BUTTON,
+                fontSize = 15.sp
             )
         }
-        Row {
-            Text(
-                modifier = Modifier.clickable {
-                    navigateToForgotPasswordScreen()
-                },
-                text = Constants.FORGOT_PASSWORD,
-                fontSize = 18.sp
-            )
-            Text(
-                modifier = Modifier.padding(start = 4.dp, end = 4.dp),
-                text = Constants.VERTICAL_DIVIDER,
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold
-            )
-            Text(
-                modifier = Modifier.clickable {
-                    navigateToSignUpScreen()
-                },
-                text = Constants.NO_ACCOUNT,
-                fontSize = 18.sp
-            )
-        }
+        Text(
+            modifier = Modifier.clickable {
+                navigateBack()
+            },
+            text = Constants.ALREADY_USER,
+            fontSize = 15.sp
+        )
     }
 }
 
 @Composable
-fun SignInTopBar() {
+fun SignUpTopBar(
+    navigateBack: () -> Unit
+) {
     TopAppBar (
         title = {
             Text(
-                text = Constants.SIGN_IN_SCREEN
+                text = Constants.SIGN_UP_SCREEN
+            )
+        },
+        navigationIcon = {
+            BackIcon(
+                navigateBack = navigateBack
             )
         }
     )

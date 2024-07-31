@@ -1,4 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.presentation
+package uk.ac.tees.mad.w9641722.weatherapp.ui
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -10,17 +10,18 @@ import kotlinx.coroutines.launch
 import uk.ac.tees.mad.w9641722.weatherapp.domain.model.Response.Loading
 import uk.ac.tees.mad.w9641722.weatherapp.domain.model.Response.Success
 import uk.ac.tees.mad.w9641722.weatherapp.domain.repository.AuthRepository
-import uk.ac.tees.mad.w9641722.weatherapp.domain.repository.SendPasswordResetEmailResponse
+import uk.ac.tees.mad.w9641722.weatherapp.domain.repository.SignInResponse
 import javax.inject.Inject
 
 @HiltViewModel
-class ForgotPasswordViewModel @Inject constructor(
+class SignInViewModel @Inject constructor(
     private val repo: AuthRepository
 ): ViewModel() {
-    var sendPasswordResetEmailResponse by mutableStateOf<SendPasswordResetEmailResponse>(Success(false))
+    var signInResponse by mutableStateOf<SignInResponse>(Success(false))
+        private set
 
-    fun sendPasswordResetEmail(email: String) = viewModelScope.launch {
-        sendPasswordResetEmailResponse = Loading
-        sendPasswordResetEmailResponse = repo.sendPasswordResetEmail(email)
+    fun signInWithEmailAndPassword(email: String, password: String) = viewModelScope.launch {
+        signInResponse = Loading
+        signInResponse = repo.firebaseSignInWithEmailAndPassword(email, password)
     }
 }

@@ -1,4 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.presentation
+package uk.ac.tees.mad.w9641722.weatherapp.ui
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

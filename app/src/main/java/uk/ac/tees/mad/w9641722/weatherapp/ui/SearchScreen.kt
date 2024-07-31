@@ -1,4 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.navigation
+package uk.ac.tees.mad.w9641722.weatherapp.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -30,6 +30,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import uk.ac.tees.mad.w9641722.weatherapp.R
 import uk.ac.tees.mad.w9641722.weatherapp.domain.model.search_model.ResponseSearchItem
+import uk.ac.tees.mad.w9641722.weatherapp.navigation.WeatherViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

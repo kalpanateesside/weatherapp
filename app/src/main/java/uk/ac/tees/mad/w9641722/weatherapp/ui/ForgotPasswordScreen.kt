@@ -1,4 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.presentation
+package uk.ac.tees.mad.w9641722.weatherapp.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -29,10 +29,6 @@ import uk.ac.tees.mad.w9641722.weatherapp.api.Constants.RESET_PASSWORD_MESSAGE
 import uk.ac.tees.mad.w9641722.weatherapp.api.Utils
 import uk.ac.tees.mad.w9641722.weatherapp.api.Utils.Companion.showMessage
 import uk.ac.tees.mad.w9641722.weatherapp.domain.model.Response
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.components.BackIcon
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.components.EmailField
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.components.ProgressBar
-import uk.ac.tees.mad.w9641722.weatherapp.presentation.components.SmallSpacer
 
 @Composable
 fun ForgotPasswordScreen(

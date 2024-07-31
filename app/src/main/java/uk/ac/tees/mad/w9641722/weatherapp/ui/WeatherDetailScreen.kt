@@ -1,4 +1,4 @@
-package uk.ac.tees.mad.w9641722.weatherapp.navigation
+package uk.ac.tees.mad.w9641722.weatherapp.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
